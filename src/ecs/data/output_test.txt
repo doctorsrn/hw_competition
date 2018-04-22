@@ -1,0 +1,7 @@
+2
+flavor1 1
+flavor2 1
+
+2
+1 flavor1 1 flavor2 1
+2 flavor3 1
