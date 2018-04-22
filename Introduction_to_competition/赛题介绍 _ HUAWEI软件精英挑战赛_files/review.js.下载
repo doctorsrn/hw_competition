@@ -1,0 +1,17 @@
+﻿var review = function () {
+    return {
+        init: function () {
+            $('.reviewlist').on('click', '.reviewVedio', function () {
+                review.showReviewDialog($(this));
+            })
+        },
+        showReviewDialog: function ($this) {
+            var imgSrc = $this.find('img').data('ng-src');
+            var $message = $('<video src="' + imgSrc + '" width="100%" height="260" controls autobuffer></video>');
+            BootstrapDialog.show({
+                title: "Video",
+                message: $message
+            });
+        },
+    }
+}();
